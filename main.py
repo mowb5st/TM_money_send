@@ -19,10 +19,6 @@ class GeneralWindow(QtWidgets.QMainWindow):
         self.ui.save_button.clicked.connect(self.save_button)
         self.file_name = file_name
         self.load_savings()
-        self.amount = self.ui.amount_field.text()
-        self.user_api_key = self.ui.user_api_field.text()
-        self.pay_pass = self.ui.pay_pass_field.text()
-        self.your_secret_key = self.ui.your_secret_key_field.text()
 
     def load_savings(self):
         file_data = {
